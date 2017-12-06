@@ -20,7 +20,7 @@ comm -1 -3 /data/fcped.txt flive.txt > tocp.txt
 FDAY=`cat flive.txt`
 echo $FDAY
 mydl() {
-        wget -c -nc -O  $1_$2.grib2   $URL/$FDAY/gfs.t12z.pgrb2.2p50.f$1
+        wget -c -nc -O  $1_$2.grib2   $URL/$FDAY/gfs.t12z.pgrb2.1p00.f$1
 }
 buquan() {
         cat /data/luoboken.nodel | while read line; do mydl $line ; done
